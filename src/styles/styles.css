@@ -1,0 +1,31 @@
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('../img/noise.png');
+            color: #fff;
+            font-weight: 400;
+        }
+
+        header {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        section {
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            color: #000;
+            width: 60vw;
+            margin: auto;
+            margin-bottom: 50px;
+        }
