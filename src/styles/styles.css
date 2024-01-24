@@ -54,25 +54,27 @@ tbody {
     text-align: justify;
 }
 
+tfoot {
+    text-align: center;
+}
+
 tfoot a {
     color: #000000;
     text-decoration: none;
-    
+
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     background-color: #f44336;
     color: white;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: red;
-  }
+}
 
-tfoot {
-    text-align: center;
+a:hover,
+a:active {
+    background-color: red;
 }
