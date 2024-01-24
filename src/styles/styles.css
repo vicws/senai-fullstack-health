@@ -78,3 +78,8 @@ a:hover,
 a:active {
     background-color: red;
 }
+
+td:hover {
+    background-color: #f2f2f2; /* Altere a cor conforme desejado */
+}
+
