@@ -38,18 +38,19 @@ table,
 th,
 td,
 tr {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     border-radius: 8px;
     border-spacing: 10px;
     padding: 5px;
 }
 
-table {
-    margin: 0 auto 30px;
+table{
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 section table:last-child {
-    margin: 0 auto;
+    margin: auto;
 }
 
 tbody {
