@@ -16,7 +16,7 @@ li {
     list-style: none;
 }
 
-a {
+nav a {
     color: #ffffff;
 }
 
@@ -30,15 +30,49 @@ section {
     margin-bottom: 50px;
 }
 
-table, th, td, tr {
+
+
+table,
+th,
+td,
+tr {
     border: 1px solid #000000;
     border-radius: 8px;
+    border-spacing: 10px;
     padding: 5px;
 }
 
-p a {
-    color:#000000;
-    width:100%;
-    margin: auto;
+table {
+    margin: 0 auto 30px;
+}
+
+section table:last-child {
+    margin: 0 auto;
+}
+
+tbody {
+    text-align: justify;
+}
+
+tfoot a {
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+tfoot {
     text-align: center;
 }
