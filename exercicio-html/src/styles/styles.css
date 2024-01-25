@@ -1,4 +1,4 @@
-*{
+*, html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,11 +17,14 @@ header {
     width: 400px;
     margin: auto;
     text-align: center;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    color: #000000;
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 .navbar{
     display: flex;
@@ -129,4 +132,11 @@ tfoot {
 
 td:hover {
     background-color: #f2f2f2; /* Altere a cor conforme desejado */
+}
+
+footer {
+    background: #2a2045;
+    padding: 50px;
+    padding-left: 75px;
+    border-top: dashed 2px #594493;
 }
