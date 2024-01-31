@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    Posso sair?
+    <br>
+    Código 1 (em bloco)
+    <div style="background-color: #d0d0d0; width: auto;">
+        <code id="multi">
+            mantém a mesma estrutura, só remove a palavra function e substitui pela declaração com seta () => {} <br>
+            let limpouQuarto = true; <br>
+            let limpouCozinha = true;<br>
+            let possoSair = () => {<br>
+                if (limpouQuarto && limpouCozinha) {<br>
+                    return "sim";<br>
+                } else { return "não" }<br>
+            };<br>
+            se tiver {}, precisa de return
+        </code>
+    </div>
+    <!-- <p id="multi"></p> -->
+    Resultado:
+    <p id="ar-fn"></p>
+    Código 2 (em uma linha)
+    <div style="background-color: #d0d0d0;">
+        <code id="single">
+            muda a estrutura toda, e, porque o nosso caso pede uma comparação, incorpora o if ternário <b>( if true ? "sim" : "não" )</b><br>
+            limpouQuarto = false;<br>            
+            limpouCozinha = true;<br>
+            possoSair = () => (limpouQuarto && limpouCozinha) ? "sim" : "não";<br>
+            se não tiver {}, não precisa de return
+        </code>
+    </div>
+    <br>
+    Resultado:
+    <p id="ar-din"></p>
+
+
+
+    <script id="multi-fn">
+        let limpouQuarto = true;
+
+        let limpouCozinha = true;
+
+        let possoSair = () => {
+            if (limpouQuarto && limpouCozinha) {
+                return "sim";
+            } else { return "não" }
+        };
+
+        document.getElementById("ar-fn").innerHTML = possoSair();
+    </script>
+
+    <!-- script pra mostrar automaticamente o código no html... fica sem quebra de linhas, copiei estático mesmo
+    <script style="display: flex">
+        let textFn1 = document.getElementById("multi-fn").textContent;
+        document.getElementById("multi").innerHTML = textFn1;
+
+    </script> 
+-->
+
+
+    <script id="single-fn">
+        // só se usa "let" ou "const" para declarar a variável; para reatribuir (dar outro valor), só se chama o nome de novo e passa o valor com o operador de atribuição (=)
+        limpouQuarto = false;
+        limpouCozinha = true;
+        possoSair = () => (limpouQuarto && limpouCozinha) ? "sim" : "não";
+
+        document.getElementById("ar-din").innerHTML = possoSair();
+    </script>
+
+    <!-- 
+        <script style="display: flex">
+        let textFn2 = document.getElementById("single-fn").textContent;
+        document.getElementById("single").innerHTML = textFn2;
+
+    </script> 
+-->
+
+
+</body>
+
+</html>
