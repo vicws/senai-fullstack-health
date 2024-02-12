@@ -8,7 +8,8 @@ const criarTarefa = (evento) => {
 
     const lista = document.querySelector('[data-list]');
     const input = document.querySelector('[data-form-input]');
-    const valor = input.value;
+    if (input.value.trim() != ""){
+    let valor = input.value;
     
     const tarefa = document.createElement('li');
     tarefa.classList.add('task');
@@ -20,7 +21,10 @@ const criarTarefa = (evento) => {
     tarefa.appendChild(BotaoConcluirTarefa());
     tarefa.appendChild(BotaoRemoverTarefa());
     lista.appendChild(tarefa);
-    input.value = " ";
+    input.value = "";
+    } else {
+        alert("Tarefas em branco não ajudam a memória =P")
+    }
 }
 
 const novaTarefa = document.querySelector('[data-form-button]');
