@@ -11,64 +11,8 @@ body {
 }
 
 .todo-list {
-  align-self:baseline;
+  align-self: baseline;
   margin: 5vh 0;
-  background-color: #0B2027;
-  padding: 1rem;
-  min-width: 400px;
-  min-height: 300px;
-}
-
-.title {
-  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
-  font-size: 1.5rem;
-  color: #F6F1D1;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-}
-
-.form-input,
-.form-button {
-  border-radius: 0;
-  padding: 0.75rem;
-  font-size: 0.75rem;
-}
-
-.form-input {
-  outline: none;
-  background-color: #F6F1D1;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.form-button {
-  border: 1px;
-  background: #F6F1D1;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-left: 0.25rem;
-}
-
-.form-button:hover {
-  color: #F6F1D1;
-  background: rgba(246, 241, 209, 0.1);
-}
-
-body {
-  margin: 0;
-}
-
-.app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.todo-list {
   background-color: #0B2027;
   padding: 1rem;
   min-width: 400px;
@@ -84,28 +28,32 @@ body {
 
 .form {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-.form-input, .form-button {
-  border-radius: 0;
-  padding: 0.75rem;
-  font-size: 0.75rem;
-}
-.form-input {
-  outline: none;
-  background-color: #F6F1D1;
-  border-color: rgba(255, 255, 255, 0.1);
-}
+
 .form-button {
   border: 1px;
-  background: #F6F1D1;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.25rem;
 }
+
 .form-button:hover {
   color: #F6F1D1;
   background: rgba(246, 241, 209, 0.1);
+}
+
+.form-input,
+.form-button {
+  background: #F6F1D1;
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.form-input {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .list {
@@ -125,13 +73,16 @@ body {
   max-width: 18rem;
 }
 
-.check-button{
+.check-button {
   background-color: #F6F1D1;
 }
-.delete-button{
+
+.delete-button {
   background-color: #DADBDD;
 }
-.check-button, .delete-button {
+
+.check-button,
+.delete-button {
   justify-self: flex-end;
   flex: 1;
   border: none;
@@ -148,16 +99,12 @@ body {
   color: #F6F1D1;
 }
 
-.task.done .check-icon {
-  background-color: #0B2027;
+.task.done .content {
+  text-decoration: line-through;
 }
 
 .content {
   align-self: center;
   margin: 0;
   flex: 5;
-}
-
-.task.done .content {
-  text-decoration: line-through;
 }
