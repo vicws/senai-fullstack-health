@@ -64,6 +64,7 @@ body {
 
 .task {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.1);
   color: #F6F1D1;
@@ -83,8 +84,7 @@ body {
 
 .check-button,
 .delete-button {
-  justify-self: flex-end;
-  flex: 1;
+  flex: 1 2 0;
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   outline: none;
@@ -92,6 +92,7 @@ body {
   cursor: pointer;
   margin: 5px;
   padding: 5px;
+  /* max-width: 70px; */
 }
 
 .task.done .check-button {
