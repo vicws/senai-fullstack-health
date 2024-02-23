@@ -8,7 +8,16 @@ const criarTarefa = (evento) => {
 
     const lista = document.querySelector('[data-list]');
     const input = document.querySelector('[data-form-input]');
-    if (input.value.trim() != ""){
+    let errorMessageElement = document.getElementById("error-message")
+    
+    if(input.value.trim() == ""){
+        document.getElementById("form-input").classList.add('input-failed')
+        errorMessageElement.textContent = "Tarefas vazias não ajudam a memória! =P"
+        return;
+    }
+    
+    
+    
     let valor = input.value;
     
     const tarefa = document.createElement('li');
@@ -22,9 +31,9 @@ const criarTarefa = (evento) => {
     tarefa.appendChild(BotaoRemoverTarefa());
     lista.appendChild(tarefa);
     input.value = "";
-    } else {
-        alert("Tarefas em branco não ajudam a memória =P")
-    }
+    document.getElementById("form-input").classList.remove('input-failed')
+
+    errorMessageElement.textContent = "";
 }
 
 const novaTarefa = document.querySelector('[data-form-button]');

@@ -53,7 +53,17 @@ body {
 
 .form-input {
   outline: none;
-  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-input.input-failed {
+  position: relative;
+  box-shadow: inset 0px 0px 0px 5px #FF0000;
+}
+
+p.error-message {
+  display: grid;
+  justify-content: center;
+  color: #FFFFFF;
 }
 
 .list {
@@ -92,7 +102,6 @@ body {
   cursor: pointer;
   margin: 5px;
   padding: 5px;
-  /* max-width: 70px; */
 }
 
 .task.done .check-button {
