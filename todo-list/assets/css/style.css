@@ -60,11 +60,16 @@ body {
   box-shadow: inset 0px 0px 0px 5px #FF0000;
 }
 
-p.error-message {
+p {
   display: grid;
   justify-content: center;
   color: #FFFFFF;
 }
+
+p.error-message {
+  text-decoration:underline red;
+}
+
 
 .list {
   padding: 0;

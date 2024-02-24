@@ -1,3 +1,5 @@
+import MudarContador from './mudarContador.js'
+
 const BotaoRemoverTarefa = () => {
     const botaoRemove = document.createElement('button');
 
@@ -13,9 +15,16 @@ const removerTarefa = (evento) => {
 
     const removerTarefa = botaoRemove.parentElement;
 
-    removerTarefa.remove()
+    // if (confirm("Tem certeza que quer remover a tarefa?")) {
+        removerTarefa.remove()
+        MudarContador()
+        return botaoRemove
 
-    return botaoRemove
+    // } else {
+    //     return
+    // }
+
+
 }
 
 export default BotaoRemoverTarefa
