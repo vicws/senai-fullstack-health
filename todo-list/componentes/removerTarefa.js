@@ -16,9 +16,9 @@ const removerTarefa = (evento) => {
     const removerTarefa = botaoRemove.parentElement;
 
     // if (confirm("Tem certeza que quer remover a tarefa?")) {
-        removerTarefa.remove()
-        MudarContador()
-        return botaoRemove
+    removerTarefa.remove()
+    MudarContador()
+    return botaoRemove
 
     // } else {
     //     return

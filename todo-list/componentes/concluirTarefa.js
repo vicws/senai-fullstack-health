@@ -14,6 +14,11 @@ const concluirTarefa = (evento) => {
     const tarefaCompleta = botaoConclui.parentElement;
 
     tarefaCompleta.classList.toggle('done');
+    if (botaoConclui.innerText == 'Concluir'){
+        return botaoConclui.innerText = 'Concluído!'
+    } else {
+        return botaoConclui.innerText = 'Concluir'
+    }
 }
 
 export default BotaoConcluirTarefa
