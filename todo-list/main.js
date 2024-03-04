@@ -1,7 +1,6 @@
 import CompleteTaskButton from './components/completeTask.js'
 import DeleteTaskButton from './components/deleteTask.js'
 import ChangeCounter from './components/changeCounter.js'
-import storedTasks from './json/taskList.json' assert {type: 'json'}
 
 document.addEventListener('DOMContentLoaded', () => {
     ChangeCounter();
