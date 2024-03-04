@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <script type="module" src="main.js" defer></script>
+    <!-- <script type="module" src="main.js" defer></script> -->
+    <script type="module" src="main-json-test.js" defer></script>
 
     <title>TODO list</title>
 </head>
@@ -15,15 +16,19 @@
     <div class="app">
         <div class="todo-list">
             <h1 class="title">
-                Listinha do Vitão
+                Vic's TODO List
             </h1>
+            <p id="task-amount" class="task-amount">Type in your task, and press the button to add it to the list!</p>
 
             <form class="form" action="">
                 <input class="form-input" id="form-input" type="text" data-form-input>
-                <button class="form-button" data-form-button> Novo Item </button>
+                <button class="form-button" data-form-button> New Task </button>
             </form>
+            <div class="load-save">
+                <button class="load-button" data-store-button>STORE</button>
+                <button class="save-button" data-load-button>LOAD</button>
+            </div>
             <p id="error-message" class="error-message"></p>
-            <p id="task-amount" class="task-amount">Digite algo no campo acima, e clique no botão para adicionar sua primeira tarefa!</p>
 
             <ul class="list" data-list>
 

@@ -1,6 +1,6 @@
-import BotaoConcluirTarefa from './componentes/concluirTarefa.js'
-import BotaoRemoverTarefa from './componentes/removerTarefa.js'
-import MudarContador from './componentes/mudarContador.js'
+import CompleteTaskButton from './components/completeTask.js'
+import DeleteTaskButton from './components/deleteTask.js'
+import ChangeCounter from './components/changeCounter.js'
 
 document.onload = document.querySelector('[data-form-input]').focus();
 
@@ -33,8 +33,8 @@ const criarTarefa = (evento) => {
 
     tarefa.innerHTML = conteudo;
 
-    tarefa.appendChild(BotaoConcluirTarefa());
-    tarefa.appendChild(BotaoRemoverTarefa());
+    tarefa.appendChild(CompleteTaskButton());
+    tarefa.appendChild(DeleteTaskButton());
     lista.appendChild(tarefa);
     input.value = "";
     input.focus();
@@ -44,7 +44,7 @@ const criarTarefa = (evento) => {
     errorMessageElement.textContent = "";
 
 
-    MudarContador();
+    ChangeCounter();
 }
 
 const novaTarefa = document.querySelector('[data-form-button]');
